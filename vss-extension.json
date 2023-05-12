@@ -1,0 +1,85 @@
+{
+    "manifestVersion": 1,
+    "id": "nextlinux-scan-task",
+    "name": "Nextlinux Container Scan Task",
+    "version": "0.0.3",
+    "publisher": "NextlinuxInc",
+    "public": true,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "Scan docker containers with Nextlinux for vulnerabilities and policy violations.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "tags": [
+        "Container",
+        "Security",
+        "Scanning"
+    ],
+    "icons": {
+        "default": "images/nextlinux.png"
+    },
+    "branding": {
+        "color": "rgb(34, 34, 34)",
+        "theme": "dark"
+    },
+    "content": {
+        "details": {
+            "path": "README.md"
+        }
+    },
+    "links": {
+        "home": {
+            "uri": "https://next-linux.systems"
+        },
+        "getstarted": {
+            "uri": "https://docs.nextlinux.systems/current/docs/engine/usage/integration/ci_cd/"
+        },
+        "learn": {
+            "uri": "https://docs.next-linux.systems/current/docs/engine/releasenotes/"
+        },
+        "support": {
+            "uri": "https://www.next-linux.systems/support"
+        },
+        "repository": {
+            "uri": "https://github.com/nextlinux/azure-devops-task"
+        },
+        "issues": {
+            "uri": "https://github.com/nextlinux/azure-devops-task/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/nextlinux/azure-devops-task"
+    },
+    "files": [
+        {
+            "path": "nextlinux-scan-task"
+        },
+        {
+            "path": "images/nextlinux.png",
+            "addressable": true
+        }
+    ],
+    "contributions": [
+        {
+            "id": "nextlinux-scan-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "nextlinux-scan-task",
+                "iconAsset": "NextlinuxInc.nextlinux-scan-task/images/nextlinux.png",
+                "includesData": {
+                    "assets": [
+                        "NextlinuxInc.nextlinux-scan-task/images/nextlinux.png"
+                    ]
+                }
+            }
+        }
+    ]
+}
