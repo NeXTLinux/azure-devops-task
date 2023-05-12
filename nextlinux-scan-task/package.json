@@ -1,0 +1,31 @@
+{
+  "name": "nextlinux-task",
+  "version": "1.0.0",
+  "description": "Nextlinux security scan task",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha dist/tests/_suite.js",
+    "build": "tsc",
+    "app": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextlinux/azure-devops-task.git"
+  },
+  "author": "Nextlinux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nextlinux/azure-devops-task/issues"
+  },
+  "homepage": "https://github.com/nextlinux/azure-devops-task#readme",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.9.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.13.5",
+    "@types/q": "^1.5.2",
+    "mocha": "^7.1.2",
+    "sync-request": "^6.1.0"
+  }
+}
