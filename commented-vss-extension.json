@@ -1,0 +1,55 @@
+{
+    "manifestVersion": 1,
+    "id": "nextlinux-scan-task",
+    "name": "Nextlinux Container Scan Task",
+    "version": "0.0.3",
+    "publisher": "nextlinux",
+//    "galleryFlags": [
+//        "Public"
+//    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "Scan docker containers with Nextlinux for vulnerabilities and policy violations.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"
+    },
+    "branding": {
+        "color": "rgb(34, 34, 34)",
+        "theme": "dark"
+    },
+    "content": {
+        "details": {
+            "path": "README.md"
+        }
+//        "license": {
+//            "path": "eula.md"
+//        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/nextlinux/azure-devops-task"
+    },
+    "files": [
+        {
+            "path": "nextlinux-task"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "nextlinux-scan-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "nextlinux-task"
+            }
+        }
+    ]
+}
